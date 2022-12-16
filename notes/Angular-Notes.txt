@@ -1,0 +1,7 @@
+Bindings
+--------
+
+-> string interpolation : {{}}
+-> property binding : [] : source code to template (html)
+-> event binding : () : html to the source
+-> two way binding : ([]) source to templates and template to source
