@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1>APP Component</h1> <hr/>
+
+  
+<div class="row">
+  <div class="col-12">
+  <span *ngFor="let number of numbers">
+    <app-buttons [btnLable]=number (totalButtonCount)="summary($event)"> </app-buttons>
+  </span>
+  </div>
+</div>
+<hr/>
+<h1>Total Count: {{total}} </h1>
+  
+
+
+</div>

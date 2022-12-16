@@ -1,0 +1,36 @@
+<div>
+
+  <h1>Pipes</h1> <hr/>
+
+  <pre>
+    {{dateToday}}
+
+    Date Pipe: {{ dateToday | date | uppercase}}<br>
+    Date Pipe: {{ dateToday | date: 'dd/MM/yyyy'}}<br>
+    Date Pipe: {{ dateToday | date: 'dd/MMM/yyyy'}}<br>
+    Date Pipe: {{ dateToday | date: 'dd/MMMM/yyyy'}}<br>
+
+    <hr/>
+
+    {{student | json}}
+
+  </pre>
+
+  <hr/>
+
+
+  <div *ngIf="showForm">
+    <form>
+      user name<input> <br/>
+      password: <input tupe="password">
+    </form>
+  </div>
+
+    <li *ngFor="let emp of employees"> 
+      {{ emp.first_name }}
+    </li>
+
+ 
+
+
+</div>
